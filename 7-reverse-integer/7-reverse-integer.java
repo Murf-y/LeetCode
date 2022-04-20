@@ -1,6 +1,6 @@
 class Solution {
     public int reverse(int x) {
-        if(x ==-2147483648){
+        if(x == Integer.MIN_VALUE){
             return 0;
         }
         if(x/10 == 0){
