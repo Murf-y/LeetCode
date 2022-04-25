@@ -4,7 +4,6 @@ class Solution {
         int r = arr.length-1;
         while(l<r){
             int m = (l+r)/2;
-            System.out.println("l " + l + " r " + r + " m " + m);
             if(m+1>=arr.length)r=m-1;
             else if(arr[m]<arr[m+1])l = m+1;
             else r=m;
