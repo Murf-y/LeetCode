@@ -78,13 +78,18 @@ class Solution {
             left_right_most = left_right_most.right;
         }
         
+        // If the left right most is not leaf
+        // remove it and put its parent left to its left
         if(left_right_most.left == null){
             if(left_right_most_parent == current){
                 left_right_most_parent.left = null;
             }else{
                 left_right_most_parent.right = null;
             }
-        }else{
+        }
+        // If the left right most is not leaf
+        // remove it and put its parent left to null
+        else{
             if(left_right_most_parent == current){
                 left_right_most_parent.left = left_right_most.left;
             }else{
